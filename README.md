@@ -113,5 +113,3 @@ Email : amit.kc240@gmail.com
 #### Developed By :- [@MrAalu](https://www.github.com/MrAalu)
 
 # Further addeed for Sonarqube automatested testing and hook from github to jenkins 
-TEST
-TEST
