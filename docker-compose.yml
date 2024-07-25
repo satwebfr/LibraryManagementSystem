@@ -1,9 +1,9 @@
 version: "3"
 services:
-  # mongodb:
-  #   image: "mongo:6.0.6"
-  #   volumes:
-  #     - data:/data/db
+  mongodb:
+    image: "mongo:6.0.6"
+    volumes:
+      - data:/data/db
   backend:
     build: ./backend
     ports:
@@ -14,8 +14,8 @@ services:
       - logs:/app/logs
       - ./backend:/app
       - /app/node_modules
-    # depends_on:
-    #   - mongodb
+    depends_on:
+      - mongodb
   frontend:
     build: ./frontend
     ports:
@@ -30,5 +30,7 @@ services:
 volumes:
   data:
   logs:
-# Note : as all the books data are populated in localhost mongodb ,we are using localhost mongodb instead of container's mongodb.
+
+# Note : as all the books data are populated in localhost mongodb 
+# we are using localhost mongodb instead of container's mongodb.
 # If container mongodb to be used then can uncomment
