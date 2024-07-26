@@ -135,4 +135,4 @@ https://f550-2a01-cb08-89e-a500-89cf-a3b3-ddb8-7231.ngrok-free.app/buildByToken/
 
 Update JenkinsFile
 
-rerun
+rerun SonarScanner
